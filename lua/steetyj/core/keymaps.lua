@@ -4,6 +4,14 @@ local keymap = vim.keymap
 
 -- general keymaps
 
+-- move highlighted text up and down
+keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
+-- keep cursor in the middle when half page jumping
+keymap.set("n", "<C-d>", "<C-d>zz")
+keymap.set("n", "<C-u>", "<C-u>zz")
+
 -- use jk to exit insert mode
 keymap.set("i", "jk", "<ESC>")
 
@@ -12,6 +20,15 @@ keymap.set("n", "<leader>nh", ":nohl<CR>")
 
 -- delete single character without copying into register
 keymap.set("n", "x", '"_x')
+
+-- greatest remap ever - past over text without overwriting register
+vim.keymap.set("x", "<leader>p", [["_dP]])
+
+-- next greatest remap ever : asbjornHaland - yank into system clipboard
+vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
+vim.keymap.set("n", "<leader>Y", [["+Y]])
+
+vim.keymap.set("n", "Q", "<nop>")
 
 -- window management
 keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
