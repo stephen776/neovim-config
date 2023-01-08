@@ -52,6 +52,11 @@ keymap.set("n", "<leadervtx", ":tabclose<CR>") -- close current tab
 keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
 keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 
+-- buffers
+keymap.set("n", "<leader>bn", "<cmd>bn<CR>")
+keymap.set("n", "<leader>bp", "<cmd>bp<CR>")
+keymap.set("n", "<leader>bc", "<cmd>bd<CR>")
+
 -- nvim-tree
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle file explorer
 
@@ -68,5 +73,5 @@ keymap.set("n", "<leader>gfc", "<cmd>Telescope git_bcommits<cr>") -- list git co
 keymap.set("n", "<leader>gb", "<cmd>Telescope git_branches<cr>") -- list git branches (use <cr> to checkout) ["gb" for git branch]
 keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list current changes per file with diff preview ["gs" for git status]
 
--- zen mode
-keymap.set("n", "<leader>zz", ":ZenMode<CR>")
+-- dashboard
+keymap.set("n", "<leader>;", "<cmd>Alpha<CR>")
