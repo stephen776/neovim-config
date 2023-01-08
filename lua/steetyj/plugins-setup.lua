@@ -101,6 +101,9 @@ return packer.startup(function(use)
 	-- git integration
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 
+	-- zen mode
+	use("folke/zen-mode.nvim")
+
 	-- VimBeGood
 	use("ThePrimeagen/vim-be-good")
 
