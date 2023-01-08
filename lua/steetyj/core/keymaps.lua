@@ -41,6 +41,12 @@ keymap.set("n", "<leader>se", "<C-w>=") -- make split windows equal width & heig
 keymap.set("n", "<leader>sx", ":close<CR>") -- close current split window
 keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>") -- vim-maximizer - maximize/unmaximize current split
 
+-- Resize with alt+arrows
+keymap.set("n", "<A-Up>", ":resize -2<CR>")
+keymap.set("n", "<A-Down>", ":resize +2<CR>")
+keymap.set("n", "<A-Left>", ":vertical resize -2<CR>")
+keymap.set("n", "<A-Right>", ":vertical resize +2<CR>")
+
 keymap.set("n", "<leader>to", ":tabnew<CR>") -- open new tab
 keymap.set("n", "<leadervtx", ":tabclose<CR>") -- close current tab
 keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab

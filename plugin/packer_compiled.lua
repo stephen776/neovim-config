@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/Users/stephenjacobs/.local/share/nvim/site/pack/packer/start/ReplaceWithRegister",
     url = "https://github.com/vim-scripts/ReplaceWithRegister"
   },
+  ["alpha-nvim"] = {
+    loaded = true,
+    path = "/Users/stephenjacobs/.local/share/nvim/site/pack/packer/start/alpha-nvim",
+    url = "https://github.com/goolord/alpha-nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/stephenjacobs/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -240,11 +245,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/stephenjacobs/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
     url = "https://github.com/christoomey/vim-tmux-navigator"
-  },
-  ["zen-mode.nvim"] = {
-    loaded = true,
-    path = "/Users/stephenjacobs/.local/share/nvim/site/pack/packer/start/zen-mode.nvim",
-    url = "https://github.com/folke/zen-mode.nvim"
   }
 }
 
