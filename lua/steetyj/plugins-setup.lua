@@ -101,10 +101,14 @@ return packer.startup(function(use)
 	-- git integration
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 
+	-- alpha dashboard
 	use({
 		"goolord/alpha-nvim",
 		requires = { "nvim-tree/nvim-web-devicons" },
 	})
+
+	-- WhichKey
+	use("folke/which-key.nvim")
 
 	if packer_bootstrap then
 		require("packer").sync()
