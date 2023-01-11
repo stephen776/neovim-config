@@ -20,22 +20,20 @@ local opts = {
 }
 
 local mappings = {
+	[";"] = { "<cmd>Alpha<CR>", "Show Dashboard" },
+	["e"] = { ":NvimTreeToggle<CR>", "Toggle file explorer" },
 	["w"] = { "<cmd>update!<CR>", "Save" },
 	["q"] = { "<cmd>q!<CR>", "Quit" },
+	["h"] = { ":nohl<CR>", "Clear search highlights" },
+	["p"] = { [["_dP]], "Paste over selection without overwriting register", mode = "x" },
+	["y"] = { [["+y]], "Yank into system clipboard" },
+	["Y"] = { [["+Y]], "Yank into system clipboard" },
+	["y"] = { [["+y]], "Yank into system clipboard", mode = "v" },
 
 	b = {
 		name = "Buffer",
 		c = { "<Cmd>bd!<Cr>", "Close current buffer" },
 		D = { "<Cmd>%bd|e#|bd#<Cr>", "Delete all buffers" },
-	},
-
-	z = {
-		name = "Packer",
-		c = { "<cmd>PackerCompile<cr>", "Compile" },
-		i = { "<cmd>PackerInstall<cr>", "Install" },
-		s = { "<cmd>PackerSync<cr>", "Sync" },
-		S = { "<cmd>PackerStatus<cr>", "Status" },
-		u = { "<cmd>PackerUpdate<cr>", "Update" },
 	},
 
 	f = {
@@ -53,6 +51,32 @@ local mappings = {
 		fc = { "<cmd>Telescope git_bcommits<cr>", "Commits for current file" },
 		b = { "<cmd>Telescope git_branches<cr>", "Branches" },
 		s = { "<cmd>Telescope git_status<cr>", "Status" },
+	},
+
+	s = {
+		name = "Windows",
+		v = { "<C-w>v", "Split window vertically" },
+		h = { "<C-w>s", "Split window horizontally" },
+		e = { "<C-w>=", "Make splits equal width" },
+		x = { ":close<CR>", "Close current window" },
+		m = { ":MaximizerToggle<CR>", "Maximize current window" },
+	},
+
+	t = {
+		name = "Tabs",
+		o = { ":tabnew<CR>", "Open new tab" },
+		x = { ":tabclose<CR>", "Close current tab" },
+		n = { ":tabn<CR>", "Go to next tab" },
+		p = { ":tabp<CR>", "Go to prev tab" },
+	},
+
+	z = {
+		name = "Packer",
+		c = { "<cmd>PackerCompile<cr>", "Compile" },
+		i = { "<cmd>PackerInstall<cr>", "Install" },
+		s = { "<cmd>PackerSync<cr>", "Sync" },
+		S = { "<cmd>PackerStatus<cr>", "Status" },
+		u = { "<cmd>PackerUpdate<cr>", "Update" },
 	},
 }
 
