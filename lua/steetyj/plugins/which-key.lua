@@ -26,9 +26,8 @@ local mappings = {
 	["q"] = { "<cmd>q!<CR>", "Quit" },
 	["h"] = { ":nohl<CR>", "Clear search highlights" },
 	["p"] = { [["_dP]], "Paste over selection without overwriting register", mode = "x" },
-	["y"] = { [["+y]], "Yank into system clipboard" },
-	["Y"] = { [["+Y]], "Yank into system clipboard" },
 	["y"] = { [["+y]], "Yank into system clipboard", mode = "v" },
+	["Y"] = { [["+Y]], "Yank into system clipboard", mode = "v" },
 
 	b = {
 		name = "Buffer",
