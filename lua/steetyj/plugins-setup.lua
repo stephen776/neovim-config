@@ -35,9 +35,6 @@ return packer.startup(function(use)
 	-- color scheme
 	use("bluz71/vim-nightfly-guicolors")
 
-	-- tmux and split window navigation
-	use("christoomey/vim-tmux-navigator")
-
 	use("szw/vim-maximizer")
 
 	-- essential plugins
@@ -106,6 +103,9 @@ return packer.startup(function(use)
 		"goolord/alpha-nvim",
 		requires = { "nvim-tree/nvim-web-devicons" },
 	})
+
+	-- toggleterm
+	use({ "akinsho/toggleterm.nvim", tag = "*" })
 
 	-- WhichKey
 	use("folke/which-key.nvim")

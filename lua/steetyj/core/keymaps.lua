@@ -26,7 +26,7 @@ keymap.set("i", "jk", "<ESC>")
 -- delete single character without copying into register
 keymap.set("n", "x", '"_x')
 
-vim.keymap.set("n", "Q", "<nop>")
+keymap.set("n", "Q", "<nop>")
 
 -- Resize window with alt+arrows
 keymap.set("n", "<A-Up>", ":resize -2<CR>")
@@ -35,5 +35,5 @@ keymap.set("n", "<A-Left>", ":vertical resize -2<CR>")
 keymap.set("n", "<A-Right>", ":vertical resize +2<CR>")
 
 -- buffers
-keymap.set("n", "<S-h>", ":bprevious<CR>")
-keymap.set("n", "<S-l>", ":bnext<CR>")
+keymap.set("n", "<Tab>", ":bprevious<CR>")
+keymap.set("n", "<S-Tab>", ":bnext<CR>")
