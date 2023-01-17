@@ -35,5 +35,11 @@ keymap.set("n", "<A-Left>", ":vertical resize -2<CR>")
 keymap.set("n", "<A-Right>", ":vertical resize +2<CR>")
 
 -- buffers
+keymap.set("n", "<S-h>", ":bprevious<CR>")
+keymap.set("n", "<S-l>", ":bnext<CR>")
 keymap.set("n", "<Tab>", ":bprevious<CR>")
 keymap.set("n", "<S-Tab>", ":bnext<CR>")
+keymap.set("n", "<C-h>", "<C-w>h")
+keymap.set("n", "<C-j>", "<C-w>j")
+keymap.set("n", "<C-k>", "<C-w>k")
+keymap.set("n", "<C-l>", "<C-w>l")
