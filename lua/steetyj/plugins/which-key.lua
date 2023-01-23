@@ -50,6 +50,7 @@ local mappings = {
 		fc = { "<cmd>Telescope git_bcommits<cr>", "Commits for current file" },
 		b = { "<cmd>Telescope git_branches<cr>", "Branches" },
 		s = { "<cmd>Telescope git_status<cr>", "Status" },
+		g = { ":lua _LAZYGIT_TOGGLE()<cr>", "LazyGit" },
 	},
 
 	s = {

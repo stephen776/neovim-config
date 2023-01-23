@@ -29,10 +29,10 @@ keymap.set("n", "x", '"_x')
 keymap.set("n", "Q", "<nop>")
 
 -- Resize window with alt+arrows
-keymap.set("n", "<A-Up>", ":resize -2<CR>")
-keymap.set("n", "<A-Down>", ":resize +2<CR>")
-keymap.set("n", "<A-Left>", ":vertical resize -2<CR>")
-keymap.set("n", "<A-Right>", ":vertical resize +2<CR>")
+keymap.set("n", "<A-Up>", ":resize -5<CR>")
+keymap.set("n", "<A-Down>", ":resize +5<CR>")
+keymap.set("n", "<A-Left>", ":vertical resize -5<CR>")
+keymap.set("n", "<A-Right>", ":vertical resize +5<CR>")
 
 -- buffers
 keymap.set("n", "<S-h>", ":bprevious<CR>")
