@@ -22,18 +22,6 @@ local opts = {
 local mappings = {
 	[";"] = { "<cmd>Alpha<CR>", "Show Dashboard" },
 	["e"] = { ":NvimTreeToggle<CR>", "Toggle file explorer" },
-	["w"] = { "<cmd>update!<CR>", "Save" },
-	["q"] = { "<cmd>q!<CR>", "Quit" },
-	["h"] = { ":nohl<CR>", "Clear search highlights" },
-	["p"] = { [["_dP]], "Paste over selection without overwriting register", mode = "x" },
-	["y"] = { [["+y]], "Yank into system clipboard", mode = "v" },
-	["Y"] = { [["+Y]], "Yank into system clipboard", mode = "v" },
-
-	b = {
-		name = "Buffer",
-		c = { "<Cmd>bd!<Cr>", "Close current buffer" },
-		D = { "<Cmd>%bd|e#|bd#<Cr>", "Delete all buffers" },
-	},
 
 	f = {
 		name = "Telescope",
@@ -51,23 +39,6 @@ local mappings = {
 		b = { "<cmd>Telescope git_branches<cr>", "Branches" },
 		s = { "<cmd>Telescope git_status<cr>", "Status" },
 		g = { ":lua _LAZYGIT_TOGGLE()<cr>", "LazyGit" },
-	},
-
-	s = {
-		name = "Windows",
-		v = { "<C-w>v", "Split window vertically" },
-		h = { "<C-w>s", "Split window horizontally" },
-		e = { "<C-w>=", "Make splits equal width" },
-		x = { ":close<CR>", "Close current window" },
-		m = { ":MaximizerToggle<CR>", "Maximize current window" },
-	},
-
-	t = {
-		name = "Tabs",
-		o = { ":tabnew<CR>", "Open new tab" },
-		x = { ":tabclose<CR>", "Close current tab" },
-		n = { ":tabn<CR>", "Go to next tab" },
-		p = { ":tabp<CR>", "Go to prev tab" },
 	},
 
 	z = {
