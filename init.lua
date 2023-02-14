@@ -2,6 +2,7 @@ require("steetyj.core.options")
 require("steetyj.core.keymaps")
 
 if vim.g.vscode then
+	require("steetyj.vscode.settings")
 	return
 else
 	require("steetyj.plugins-setup")
@@ -22,4 +23,5 @@ else
 	require("steetyj.plugins.alpha")
 	require("steetyj.plugins.which-key")
 	require("steetyj.plugins.toggleterm")
+	require("steetyj.plugins.indent-blankline")
 end
