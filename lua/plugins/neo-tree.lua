@@ -18,4 +18,22 @@ return {
     { "<leader>E", "<leader>fE", desc = "Explorer NeoTree (root dir)", remap = true },
     { "<leader>e", "<leader>fe", desc = "Explorer NeoTree (cwd)", remap = true },
   },
+  opts = {
+    filesystem = {
+      bind_to_cwd = true,
+      follow_current_file = true,
+      filtered_items = {
+        visible = false,
+        -- hide_dotfiles = false,
+        -- hide_gitignored = false,
+        never_show = {
+          "thumbs.db",
+          ".DS_Store",
+          ".git",
+          "node_modules",
+          ".eslintcache",
+        },
+      },
+    },
+  },
 }

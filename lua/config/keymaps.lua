@@ -49,7 +49,11 @@ map("x", "<leader>p", [["_dP]])
 map({ "n", "v" }, "<leader>y", [["+y]])
 map("n", "<leader>Y", [["+Y]])
 
+-- ctrl-backspace in insert node to delete whole words
+map("i", "<C-BS>", "<Esc>cvb")
+
 map("n", "Q", "<nop>")
+map("n", "<CR>", "ciw")
 
 -- buffers
 if Util.has("bufferline.nvim") then
