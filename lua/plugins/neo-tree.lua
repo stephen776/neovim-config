@@ -23,15 +23,22 @@ return {
       bind_to_cwd = true,
       follow_current_file = true,
       filtered_items = {
-        visible = false,
-        -- hide_dotfiles = false,
-        -- hide_gitignored = false,
+        visible = true,
+        show_hidden_count = true,
+        hide_dotfiles = false,
+        hide_gitignored = true,
+        always_show = {
+          ".env",
+        },
         never_show = {
           "thumbs.db",
           ".DS_Store",
           ".git",
-          "node_modules",
           ".eslintcache",
+        },
+        hide_by_name = {
+          "build",
+          "node_modules",
         },
       },
     },
