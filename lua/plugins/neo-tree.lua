@@ -23,7 +23,7 @@ return {
       bind_to_cwd = true,
       follow_current_file = true,
       filtered_items = {
-        visible = true,
+        visible = false,
         show_hidden_count = true,
         hide_dotfiles = false,
         hide_gitignored = true,
