@@ -16,12 +16,12 @@ local function map(mode, lhs, rhs, opts)
 end
 
 -- Move Lines
-map("n", "<A-e>", "<cmd>m .+1<cr>==", { desc = "Move down" })
-map("n", "<A-u>", "<cmd>m .-2<cr>==", { desc = "Move up" })
-map("i", "<A-e>", "<esc><cmd>m .+1<cr>==gi", { desc = "Move down" })
-map("i", "<A-u>", "<esc><cmd>m .-2<cr>==gi", { desc = "Move up" })
-map("v", "<A-e>", ":m '>+1<cr>gv=gv", { desc = "Move down" })
-map("v", "<A-u>", ":m '<-2<cr>gv=gv", { desc = "Move up" })
+map("n", "<A-Down>", "<cmd>m .+1<cr>==", { desc = "Move down" })
+map("n", "<A-Up>", "<cmd>m .-2<cr>==", { desc = "Move up" })
+map("i", "<A-Down>", "<esc><cmd>m .+1<cr>==gi", { desc = "Move down" })
+map("i", "<A-Up>", "<esc><cmd>m .-2<cr>==gi", { desc = "Move up" })
+map("v", "<A-Down>", ":m '>+1<cr>gv=gv", { desc = "Move down" })
+map("v", "<A-Up>", ":m '<-2<cr>gv=gv", { desc = "Move up" })
 
 -- keep cursor in the middle when half page jumping
 map("n", "<C-d>", "<C-d>zz")
@@ -32,9 +32,6 @@ map("n", "<PageUp>", "<C-u>zz")
 -- keep curosr centered when iterating search results
 map("n", "n", "nzz")
 map("n", "N", "Nzz")
-
--- use jk to exit insert mode
-map("i", "jk", "<ESC>")
 
 -- clear search highlights
 map("n", "<leader>h", ":nohl<CR>")
