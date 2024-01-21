@@ -68,7 +68,7 @@ map("n", "<C-u>", "<C-w>k", { desc = "Go to upper window" })
 map("n", "<C-i>", "<C-w>l", { desc = "Go to right window" })
 
 -- Resize window using <alt> arrow keys
-map("n", "<A-Up>", "<cmd>resize +2<cr>", { desc = "Increase window height" })
-map("n", "<A-Down>", "<cmd>resize -2<cr>", { desc = "Decrease window height" })
-map("n", "<A-Left>", "<cmd>vertical resize -2<cr>", { desc = "Decrease window width" })
-map("n", "<A-Right>", "<cmd>vertical resize +2<cr>", { desc = "Increase window width" })
+map("n", "<A-f>", "<cmd>resize +2<cr>", { desc = "Increase window height" })
+map("n", "<A-s>", "<cmd>resize -2<cr>", { desc = "Decrease window height" })
+map("n", "<A-r>", "<cmd>vertical resize -2<cr>", { desc = "Decrease window width" })
+map("n", "<A-t>", "<cmd>vertical resize +2<cr>", { desc = "Increase window width" })
